@@ -1,10 +1,8 @@
-# Ant Design Pro Lab
+# Ant Design Pro
 
 This project is initialized with [Ant Design Pro](https://pro.ant.design). Follow is the quick guide for how to use.
 
 ## Environment Prepare
-
-Use the Visual Studio remote development container in `.devcontainer` to easily get started.
 
 Install `node_modules`:
 

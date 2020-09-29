@@ -5,7 +5,6 @@ import { useIntl } from 'umi';
 import defaultSettings from '../config/defaultSettings';
 
 const { pwa } = defaultSettings;
-const isHttps = document.location.protocol === 'https:';
 
 // if pwa is true
 if (pwa) {
@@ -60,7 +59,7 @@ if (pwa) {
       onClose: async () => {},
     });
   });
-} else if ('serviceWorker' in navigator && isHttps) {
+} else if ('serviceWorker' in navigator) {
   // unregister service worker
   const { serviceWorker } = navigator;
   if (serviceWorker.getRegistrations) {
